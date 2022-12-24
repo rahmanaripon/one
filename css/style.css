@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/*=========== sidebar css ==========*/
+.sidebar {
+    width: 300px;
+    background: #ddd;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 99999;
+    padding: 20px;
+    transition: all linear .5s;
+}
+.profile-information h2 {
+    color: #f38181;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.profile-information h4 {
+    color: #d95f5f;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.profile-information p{
+    font-size: 14px;
+    color: #444;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+.connect-with i{
+    width: 40px;
+    height: 40px;
+    background: #f38181;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+}
+.menu {
+    padding-top: 20px; 
+    text-align: center;
+}
+.menu h3 {
+    color: #f38181;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.menu a {
+    display: block;
+    background: #f38181;
+    color: #ffff;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 5px 0;
+    line-height: 40px;
+}
+.bars {
+    width: 40px;
+    height: 40px;
+    background: #606db2;
+    color: #fff;
+    font-size:20px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+}
+.ber-hou {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+}
+/*========== Navbar Part CSS =============*/
+.navbar-expand-lg .navbar-nav .nav-link {
+	color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+    padding-left: 28px;
+    padding-right: 28px;
+}
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link{
+    padding-right: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar {
+	padding: 28px 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #fce38a;
+}
+.navbar-expand-lg .navbar-nav .nav-link:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fce38a;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover:before {
+    opacity: 1;
+    width: 100%;
+}
+/*========== Banner Part CSS =============*/
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 236px;
+    padding-bottom: 230px;
+    position: relative;
+}
+#banner:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+}
+.banner-text {
+    position: relative;
+    z-index: 999;
+    padding-bottom: 50px
+}
+.banner-text h3 {
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 28px;
+}
+.banner-text h1 {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 140px;
+    padding-bottom: 140px;
+    position: relative;
+}
+.banner-text h1:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-text a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border: 3px solid #fff;
+    transition:  all linear .3s;
+}
+.banner-text a:hover {
+    background: #fff;
+    color: #fce38a;
+
+}
+.banner-slider {
+    position: relative;
+    z-index: 999;
+    padding-bottom: 50px
+}
+/*========== About Part CSS =============*/
+#about {
+    padding-top: 92px;
+    padding-bottom: 110px;
+}
+.head {
+    padding-bottom: 80px;
+}
+.head h3 {
+    color: #333;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+}
+.head h2 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 6px;
+    padding-bottom: 70px;
+    position: relative;
+}
+.head h2:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.head p {
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.about-item {
+    position: relative;
+    overflow: hidden;
+}
+.about-item img {
+    transition: all linear .3s;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.5), rgba(252, 227, 138, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease .3s;
+}
+.overlay-text h3 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.overlay-text i {
+    color: #fff;
+    font-size: 18px;
+}
+.about-item:hover .overlay{
+    opacity: 1;
+}
+.about-item:hover img {
+    transform: scale(1.2);
+}
+/*========== Counter Part CSS =============*/
+#counter-main {
+    background: #95e1d3;
+    padding-top:90px;
+    padding-bottom: 90px;
+}
+.counter-item h3 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.counter-item p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.counter-item i {
+    color: brown;
+    font-size: 30px;
+}
+/*========== service Part CSS =============*/
+#service {
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+.service-item {
+    padding-bottom: 100px;
+}
+.service-item h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.service-item p {
+    font-size: 15px;
+    color: #999;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+.service-item i{
+    color: #95e1d3;
+    font-size: 30px;
+}
+/*========== Feedback Part CSS =============*/
+#feedback {
+    background: #f8f8f8;
+    padding-top: 80px;
+    padding-bottom: 70px
+}
+.feedback-item i {
+    color: #95e1d3;
+    width: 144px;
+    height: 144px;
+    border: 3px solid #95e1d3;
+    line-height: 144px;
+    text-align: center;
+    font-size: 60px;
+}
+.feedback-item p{
+    font-size: 24px;
+    color: #999;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+    font-style: italic;
+}
+.feedback-item h4{
+    font-size: 24px;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+    padding-left: 70px;
+    position: relative;
+}
+.feedback-item h4:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.feedback-main {
+    position: relative;
+}
+.feedback-main i {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+.feedback-item i {
+    color: #95e1d3;
+    width: 144px;
+    height: 144px;
+    border: 3px solid #95e1d3;
+    line-height: 144px;
+    text-align: center;
+    font-size: 60px;
+}
+.left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*========== team Part CSS =============*/
+#team {
+    padding-top: 100px;
+}
+.team-item h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-top: 28px;
+}
+.team-item p {
+    font-size: 15px;
+    color: #999;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic
+}
+.team-img {
+    position: relative;
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.team-overlay i 
+{
+    background: #fce38a;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 26px;
+    color: #f38181;
+    transition: all linear .3s;
+    margin: 0 1px
+}
+.team-overlay i:hover {
+    background:#f38181;
+    color: #fff;
+}
+.team-item:hover .team-overlay {
+    opacity: 1;
+}
+/*========== work Part CSS =============*/
+#work {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.work-img {
+    position: relative
+}
+.work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.work-content{
+    align-self: center;
+}
+.work-content i{
+    color: #fff;
+}
+.work-content h3{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;padding-top: 14px;
+}
+.work-content p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    padding-top: 2px;
+}
+.work-img:hover .work-overlay {
+    opacity: 1;
+}
+/*========== footer Part CSS =============*/
+#footer{
+    background: #f8f8f8;
+    padding-top: 75px;
+    padding-bottom: 68px;
+}
+.footer-item img {
+    padding-bottom: 44px;
+}
+.footer-item p {
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+.footer-item h6 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.footer-item h6 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-item h5 i {
+    font-size: 16px;
+    color: #95e1d3;
+    margin-left: 18px;
+}
+.footer-item h5{
+    font-size: 15px;
+    color: #999;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+.sub {
+    margin-top: 36px;
+    position: relative;
+}
+.sub button{
+    padding: 15px 34px;
+    background: #95e1d3;
+    color: #fff;
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sub input {
+    padding: 13px 0;
+    padding-left: 18px;
+    border: 1px solid #e7e7e7;
+    width: 100%;
+}
+.sub input::placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.footer-item h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    padding-bottom: 28px;
+}
+.blog-text h4 {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 18px;
+}
+.blog-text p {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #999;
+    text-transform: capitalize;
+}
+.insta img {
+    padding-bottom: 7px
+}
+.more a {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #999;
+    padding-top: 10px;
+}
+/*========== copyright Part CSS =============*/
+#copyright {
+    background: #f8f8f8;
+}
+.copyright {
+    border-top: 1px solid #e5e5e5;
+}
+.copyright p {
+    line-height: 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.copyright span {
+    color: #f38181;
+}
+/*========== Version 03  CSS =============*/
+#index3 #banner:after{
+    display: none;
+}
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+#index4 .banner-text h1 {
+    font-size: 60px;
+}
+/*========== green Version CSS =============*/
+#green .navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: green;
+}
+#green .navbar-expand-lg .navbar-nav .nav-link:before{
+    background: green;
+}
+#green .banner-text a:hover {
+    background: green;
+    color: #fff;
+}
+#green .head h2:after {
+    background: green;
+}
+#green .overlay {
+    background: linear-gradient(to bottom, rgba(0, 128, 0, 0.81), rgba(81, 237, 81, 0.89));
+}
+
+/*========== Red Version CSS =============*/
+#red .navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: red;
+}
+#red .navbar-expand-lg .navbar-nav .nav-link:before{
+    background: red;
+}
+#red .banner-text a:hover {
+    background: red;
+    color: #fff;
+}
+#red .head h2:after {
+    background: red;
+}
+#red .overlay {
+    background: linear-gradient(to bottom, Red, #7e3030);
+}
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+/*========== Navbar Part CSS =============*/
+
+
+
+
+
+
+
